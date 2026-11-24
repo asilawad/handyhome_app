@@ -1,3 +1,4 @@
+import 'package:handy_home_app/customwidget/app_image.dart';
 import 'package:flutter/material.dart';
 import 'package:handy_home_app/presentation/view/home/HomeComponents/stare_rating_widget.dart';
 
@@ -23,15 +24,13 @@ class CustomerCommentWidget extends StatelessWidget {
         Row(
           children: [
             Container(
-              height: 50,
-              width: 50,
-              margin: const EdgeInsets.only(left: 8),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Image.network(
-                image,
-                fit: BoxFit.contain,
+              height: 44,
+              width: 44,
+              margin: const EdgeInsetsDirectional.only(end: 10),
+              decoration: const BoxDecoration(shape: BoxShape.circle),
+              child: AppImage(
+                imageUrl: image,
+                fit: BoxFit.cover,
               ),
               clipBehavior: Clip.antiAlias,
             ),

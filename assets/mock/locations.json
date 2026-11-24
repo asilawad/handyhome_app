@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "country": "فلسطين",
+    "city": "غزة",
+    "building": "عمارة الياسمين",
+    "apartment_number": "12",
+    "phone_number": "0599000000",
+    "user": 1,
+    "address_name": "المنزل"
+  },
+  {
+    "id": 2,
+    "country": "فلسطين",
+    "city": "خانيونس",
+    "building": "برج النور",
+    "apartment_number": "4",
+    "phone_number": "0599000001",
+    "user": 1,
+    "address_name": "العمل"
+  }
+]

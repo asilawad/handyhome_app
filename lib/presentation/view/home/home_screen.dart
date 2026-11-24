@@ -1,3 +1,4 @@
+import 'package:handy_home_app/customwidget/app_image.dart';
 import 'dart:async';
 
 import 'package:cached_network_image/cached_network_image.dart';
@@ -93,22 +94,28 @@ class _HomeScreenState extends State<HomeScreen> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8),
                               ),
+                              clipBehavior: Clip.antiAlias,
                               child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  CachedNetworkImage(
-                                    imageUrl: state.categories[index].icon,
-                                    placeholder: (context, url) =>
-                                        const CircularProgressIndicator(),
-                                    errorWidget: (context, url, error) =>
-                                        const Icon(Icons.error),
+                                  Expanded(
+                                    child: AppImage(
+                                      imageUrl: state.categories[index].icon,
+                                      width: double.infinity,
+                                      fit: BoxFit.cover,
+                                      placeholder: (context, url) =>
+                                          const CircularProgressIndicator(),
+                                      errorWidget: (context, url, error) =>
+                                          const Icon(Icons.error),
+                                    ),
                                   ),
+                                  const SizedBox(height: 8),
                                   Text(
                                     state.categories[index].name,
                                     style: StyleManger.headline1(fontSize: 14),
                                   ),
                                   Text(
-                                      '${state.categories[index].countServices} خدمات فرعية')
+                                      '${state.categories[index].countServices} خدمات فرعية'),
+                                  const SizedBox(height: 8),
                                 ],
                               ),
                             ),

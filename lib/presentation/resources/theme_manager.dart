@@ -16,6 +16,12 @@ ThemeData getApplicationTheme() {
       primaryColorLight: ColorManager.whiteColor,
       disabledColor: ColorManager.primaryMainDisableColor,
       colorScheme: ColorScheme.light(
+        primary: ColorManager.primaryMainEnableColor,
+        onPrimary: ColorManager.whiteColor,
+        secondary: ColorManager.secondaryColor,
+        onSecondary: ColorManager.darkTextPrimaryColor,
+        surface: ColorManager.whiteColor,
+        surfaceTint: Colors.transparent,
         error: ColorManager.statusErrorColor,
       ),
       // splashColor: ColorManager.lightPrimary,
@@ -44,6 +50,7 @@ ThemeData getApplicationTheme() {
               color: ColorManager.darkTextPrimaryColor,
               fontsize: AppFontSize.s12),
           backgroundColor: ColorManager.primaryMainEnableColor,
+          foregroundColor: ColorManager.whiteColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),

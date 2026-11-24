@@ -112,6 +112,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             price:
                                 '${state.services[index].priceFrom}-${state.services[index].priceTo}',
                             serviceName: state.services[index].name,
+                            rating: state.services[index].ratingText,
                           ),
                         );
                       } else {

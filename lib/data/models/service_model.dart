@@ -22,6 +22,15 @@ class ServiceModel {
     this.reviews,
   });
 
+  /// Average review score, e.g. "4.5"; empty when the service has no reviews.
+  String get ratingText {
+    final scores = reviews ?? const <ReviewModel>[];
+    if (scores.isEmpty) return '';
+    final avg = scores.map((r) => r.review).reduce((a, b) => a + b) /
+        scores.length;
+    return avg.toStringAsFixed(1);
+  }
+
   factory ServiceModel.fromJson(Map<String, dynamic> json) {
     return ServiceModel(
         name: json['name'],

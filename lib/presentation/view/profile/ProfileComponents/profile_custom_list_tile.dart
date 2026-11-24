@@ -22,8 +22,13 @@ class ProfileCustomListTile extends StatelessWidget {
         elevation: 0,
         color: ColorManager.background,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
-        child: const Icon(
-          Icons.arrow_right_rounded,
+        child: const Padding(
+          padding: EdgeInsets.all(6),
+          child: Icon(
+            Icons.arrow_forward_ios_rounded,
+            size: 14,
+            color: ColorManager.greyColor,
+          ),
         ),
       ),
     );

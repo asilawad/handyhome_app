@@ -65,9 +65,11 @@ class _AllOrderScreenState extends State<AllOrderScreen> {
                         children: [
                           Expanded(
                             child: Container(
+                              height: 80,
                               child: Image.asset(
-                                ImagePath.serviceImage,
-                                fit: BoxFit.fill,
+                                ImagePath.serviceImageFor(
+                                    state.orders[index].service),
+                                fit: BoxFit.cover,
                               ),
                               clipBehavior: Clip.antiAlias,
                               decoration: BoxDecoration(

@@ -58,6 +58,9 @@ class HomeHorizontalCategoryWidget extends StatelessWidget {
                   serviceName: changeTheOrder
                       ? servicesChanged[index].name
                       : state.services[index].name,
+                  rating: changeTheOrder
+                      ? servicesChanged[index].ratingText
+                      : state.services[index].ratingText,
                   loadingPlaceholder: Container(
                     height: 200,
                     width: 300,

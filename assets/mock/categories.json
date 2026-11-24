@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "تنظيف",
+    "icon": "assets/images/services/home_cleaning.jpg"
+  },
+  {
+    "id": 2,
+    "name": "كهرباء",
+    "icon": "assets/images/services/electrical_wiring.jpg"
+  },
+  {
+    "id": 3,
+    "name": "سباكة",
+    "icon": "assets/images/services/leak_repair.jpg"
+  },
+  {
+    "id": 4,
+    "name": "نقل أثاث",
+    "icon": "assets/images/services/furniture_moving.jpg"
+  },
+  {
+    "id": 5,
+    "name": "صيانة حاسوب",
+    "icon": "assets/images/services/laptop_repair.jpg"
+  },
+  {
+    "id": 6,
+    "name": "شبكات وإنترنت",
+    "icon": "assets/images/services/network_cabling.jpg"
+  }
+]

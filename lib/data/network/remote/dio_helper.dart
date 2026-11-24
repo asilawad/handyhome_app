@@ -5,6 +5,7 @@ import 'package:handy_home_app/customwidget/snackbar.dart';
 import 'dart:io';
 import '../../../../app/constants_manager.dart';
 import 'api_result_handler.dart';
+import '../mock/mock_api_interceptor.dart';
 
 class DioHelper {
   late Dio dio;
@@ -24,6 +25,8 @@ class DioHelper {
     );
 
     dio = Dio(baseOptions);
+    // Demo mode: the old server is offline, so answer from assets/mock.
+    dio.interceptors.add(MockApiInterceptor());
     printTest('dio');
   }
 

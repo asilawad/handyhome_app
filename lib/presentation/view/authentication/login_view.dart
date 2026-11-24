@@ -48,10 +48,7 @@ class _LoginViewState extends State<LoginView> {
         body: Form(
       key: _formKey,
       child: ListView(
-        padding: const EdgeInsets.symmetric(
-          horizontal: 30,
-          vertical: 20,
-        ),
+        padding: const EdgeInsets.fromLTRB(30, 56, 30, 20),
         children: [
           SvgPicture.asset(
             ImagePath.iconHome,
@@ -59,6 +56,7 @@ class _LoginViewState extends State<LoginView> {
             height: AppHeightSize.h73,
             alignment: AlignmentDirectional.topStart,
           ),
+          const SizedBox(height: 16),
           HeaderCustom(
             text1: LocaleKeys.loginText.tr(),
             subText: LocaleKeys.subLoginText.tr(),

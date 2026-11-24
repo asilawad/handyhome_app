@@ -75,9 +75,12 @@ class _NotificationScreenState extends State<NotificationScreen>
                           children: [
                             Visibility(
                               visible: !unreadState.notifications.isEmpty,
-                              child: Text(
-                                'الحديثة',
-                                style: StyleManger.headline1(fontSize: 18),
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 12, bottom: 10),
+                                child: Text(
+                                  'الحديثة',
+                                  style: StyleManger.headline1(fontSize: 18),
+                                ),
                               ),
                             ),
                             ...unreadState.notifications
@@ -102,7 +105,8 @@ class _NotificationScreenState extends State<NotificationScreen>
                                                 ),
                                               )
                                             ]),
-                                        padding: const EdgeInsets.all(8),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 16, vertical: 12),
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
@@ -139,9 +143,12 @@ class _NotificationScreenState extends State<NotificationScreen>
                                 .toList(),
                             Visibility(
                               visible: !readState.notifications.isEmpty,
-                              child: Text(
-                                'القديمة',
-                                style: StyleManger.headline1(fontSize: 18),
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 12, bottom: 10),
+                                child: Text(
+                                  'القديمة',
+                                  style: StyleManger.headline1(fontSize: 18),
+                                ),
                               ),
                             ),
                             ...readState.notifications
@@ -166,7 +173,8 @@ class _NotificationScreenState extends State<NotificationScreen>
                                                 ),
                                               )
                                             ]),
-                                        padding: const EdgeInsets.all(8),
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 16, vertical: 12),
                                         child: Column(
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,

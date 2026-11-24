@@ -1,6 +1,5 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_background/flutter_background.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:handy_home_app/app/locator.dart';
@@ -18,7 +17,6 @@ import 'data/network/local/local_network.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // // Initialize the flutter_background package
   // await FlutterBackground.initialize();
 
   // // Register the BackgroundService
@@ -74,6 +72,3 @@ void main() async {
 
 
 
-// login account
-//naji.mohammed2001@gmail.com
-//123**mmMM  

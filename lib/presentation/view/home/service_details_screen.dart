@@ -1,3 +1,4 @@
+import 'package:handy_home_app/customwidget/app_image.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -99,7 +100,7 @@ class _ServiceDetailsScreenState extends State<ServiceDetailsScreen> {
                                     margin: const EdgeInsets.all(12),
                                     decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(8)),
-                                    child: CachedNetworkImage(
+                                    child: AppImage(
                                       imageUrl: state.serviceDetails.image,
                                       placeholder: (context, url) => Container(
                                         height: 180,
@@ -118,28 +119,33 @@ class _ServiceDetailsScreenState extends State<ServiceDetailsScreen> {
                                 ],
                               ),
                             ),
-                            const Padding(
-                              padding: EdgeInsets.only(
-                                top: 25,
-                                left: 25,
-                              ),
-                              child: StareRatingWidget(ratingNumber: '4.6'),
-                            )
+                            if (state.serviceDetails.ratingText.isNotEmpty)
+                              Padding(
+                                padding: const EdgeInsets.only(
+                                  top: 25,
+                                  left: 25,
+                                ),
+                                child: StareRatingWidget(
+                                    ratingNumber:
+                                        state.serviceDetails.ratingText),
+                              )
                           ],
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Expanded(
-                              flex: 2,
                               child: Text(
                                 state.serviceDetails.name,
                                 style: StyleManger.headline1(fontSize: 18),
                               ),
                             ),
-                            Expanded(
-                              child: Text(
-                                  '${state.serviceDetails.priceFrom} - ${state.serviceDetails.priceTo} شيكل'),
+                            const SizedBox(width: 12),
+                            Text(
+                              'من ${state.serviceDetails.priceFrom} إلى ${state.serviceDetails.priceTo} شيكل',
+                              style: StyleManger.headline1(
+                                  fontSize: 14,
+                                  color: ColorManager.primaryMainEnableColor),
                             ),
                           ],
                         ),

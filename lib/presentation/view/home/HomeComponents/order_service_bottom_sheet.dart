@@ -351,7 +351,7 @@ class _OrderServiceBottomSheetState extends State<OrderServiceBottomSheet> {
                             context.read<HomeCubit>().orderFixedService(
                                 quantity: serviceCount,
                                 totalPrice:
-                                    widget.service?.priceTo ?? 0 * serviceCount,
+                                    (widget.service?.priceTo ?? 0) * serviceCount,
                                 date: DateFormat('yyyy-MM-dd')
                                     .format(selectedDate!),
                                 time:
@@ -372,14 +372,19 @@ class _OrderServiceBottomSheetState extends State<OrderServiceBottomSheet> {
                     width: 10,
                   ),
                   Expanded(
-                    child: TextFormField(
-                      readOnly: true,
-                      initialValue: '80 شيكل',
-                      style: StyleManger.headline1(
-                          color: ColorManager.primaryMainEnableColor,
-                          fontSize: 16),
-                      decoration:
-                          const InputDecoration(fillColor: Color(0xFFEBF1F0)),
+                    child: Container(
+                      height: 56,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFEBF1F0),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: Text(
+                        '${(widget.service?.priceTo ?? 0) * serviceCount} شيكل',
+                        style: StyleManger.headline1(
+                            color: ColorManager.primaryMainEnableColor,
+                            fontSize: 16),
+                      ),
                     ),
                   ),
                 ],

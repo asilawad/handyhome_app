@@ -20,6 +20,7 @@ class CustomButtonPrimary extends StatelessWidget {
         fixedSize: const Size(double.infinity, 50),
         minimumSize: const Size(double.infinity, 50),
         backgroundColor: ColorManager.primaryMainEnableColor,
+        foregroundColor: ColorManager.whiteColor,
         textStyle: Theme.of(context).textTheme.headlineMedium,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),

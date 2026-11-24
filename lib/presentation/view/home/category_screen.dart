@@ -63,6 +63,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
                                 '${state.categoryServices.services[index].priceFrom} - ${state.categoryServices.services[index].priceTo}',
                             serviceName:
                                 state.categoryServices.services[index].name,
+                            rating: state.categoryServices.services[index]
+                                .ratingText,
                             loadingPlaceholder: Container(
                               height: 180,
                               padding: const EdgeInsets.symmetric(

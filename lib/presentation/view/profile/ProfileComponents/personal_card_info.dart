@@ -1,3 +1,4 @@
+import 'package:handy_home_app/customwidget/app_image.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -54,7 +55,7 @@ class _PersonalCardInfoState extends State<PersonalCardInfo> {
                     borderRadius: BorderRadius.circular(5),
                   ),
                   clipBehavior: Clip.antiAlias,
-                  child: CachedNetworkImage(
+                  child: AppImage(
                     imageUrl: Endpoints.baseUrl + state.userInfoModel.image,
                     placeholder: (context, url) => const Card(
                       color: Colors.grey,

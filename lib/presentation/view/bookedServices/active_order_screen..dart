@@ -63,10 +63,11 @@ class _ActiveOrderScreenState extends State<ActiveOrderScreen> {
                         children: [
                           Expanded(
                             child: Container(
-                              // alignment: Alignment.center,
+                              height: 80,
                               child: Image.asset(
-                                ImagePath.serviceImage,
-                                fit: BoxFit.fill,
+                                ImagePath.serviceImageFor(
+                                    state.orders[index].service),
+                                fit: BoxFit.cover,
                               ),
                               clipBehavior: Clip.antiAlias,
                               decoration: BoxDecoration(

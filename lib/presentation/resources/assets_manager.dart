@@ -13,17 +13,31 @@ class ImagePath {
   static const String undrawVerified = "$IMAGE_PATH/undraw_verified.png";
   static const String cleaningIcon = "$IMAGE_PATH/cleaningIcon.svg";
   static const String newPasswordImage = "$IMAGE_PATH/newPassword.png";
-  static const String cleaningImage = "$IMAGE_PATH/cleaning.png";
-  static const String computerImage = "$IMAGE_PATH/computer.png";
-  static const String electricianImage = "$IMAGE_PATH/electrician.png";
-  static const String furnitureImage = "$IMAGE_PATH/furniture.png";
-  static const String plumbingImage = "$IMAGE_PATH/plumbing.png";
-  static const String wiFiAndNetwork = "$IMAGE_PATH/wiFiAndNetwork.png";
   static const String onboarding1 = "$IMAGE_PATH/onboarding1.png";
   static const String onboarding2 = "$IMAGE_PATH/onboarding2.png";
   static const String onboarding3 = "$IMAGE_PATH/onboarding3.png";
-  static const String serviceImage = "$IMAGE_PATH/service_image.png";
-  static const String profileImage = "$IMAGE_PATH/profile_image.png";
+
+  /// Fallback photo for a service without its own image.
+  static const String serviceImage = "$IMAGE_PATH/services/tools.jpg";
+
+  static const Map<int, String> _serviceImages = {
+    1: "$IMAGE_PATH/services/home_cleaning.jpg",
+    2: "$IMAGE_PATH/services/sofa_cleaning.jpg",
+    3: "$IMAGE_PATH/services/electrical_wiring.jpg",
+    4: "$IMAGE_PATH/services/lighting_installation.jpg",
+    5: "$IMAGE_PATH/services/leak_repair.jpg",
+    6: "$IMAGE_PATH/services/water_heater.jpg",
+    7: "$IMAGE_PATH/services/furniture_moving.jpg",
+    8: "$IMAGE_PATH/services/furniture_assembly.jpg",
+    9: "$IMAGE_PATH/services/laptop_repair.jpg",
+    10: "$IMAGE_PATH/services/software_setup.jpg",
+    11: "$IMAGE_PATH/services/network_cabling.jpg",
+    12: "$IMAGE_PATH/services/router_setup.jpg",
+  };
+
+  /// Photo for the service with [id], or [serviceImage] if it has none.
+  static String serviceImageFor(int? id) => _serviceImages[id] ?? serviceImage;
+
   static const String doneImage = "$IMAGE_PATH/done_image.png";
   static const String customServiceImage =
       "$IMAGE_PATH/custom_service_image.png";

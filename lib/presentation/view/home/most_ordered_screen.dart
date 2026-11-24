@@ -64,6 +64,7 @@ class _MostOrderedScreenState extends State<MostOrderedScreen> {
                             price:
                                 '${state.services[index].priceFrom} - ${state.services[index].priceTo}',
                             serviceName: state.services[index].name,
+                            rating: state.services[index].ratingText,
                             loadingPlaceholder: Container(
                               height: 180,
                               padding: const EdgeInsets.symmetric(

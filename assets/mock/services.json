@@ -1,0 +1,668 @@
+[
+  {
+    "id": 1,
+    "category_id": 1,
+    "name": "تنظيف شامل للمنزل",
+    "image": "assets/images/services/home_cleaning.jpg",
+    "price_from": 80,
+    "price_to": 150,
+    "descriptions": "تنظيف كامل لجميع غرف المنزل والمطبخ والحمامات باستخدام مواد آمنة.",
+    "include_services": [
+      {
+        "descriptions": "تنظيف الأرضيات والنوافذ"
+      },
+      {
+        "descriptions": "تعقيم الحمامات والمطبخ"
+      },
+      {
+        "descriptions": "ترتيب الغرف"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "غسيل السجاد"
+      },
+      {
+        "descriptions": "تنظيف الواجهات الخارجية"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 10,
+        "user": {
+          "first_name": "أحمد",
+          "last_name": "خليل",
+          "image": "assets/images/avatars/avatar_4.jpg"
+        },
+        "review": 5,
+        "comment": "خدمة ممتازة والفني ملتزم بالموعد",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 11,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category_id": 1,
+    "name": "تنظيف الكنب والسجاد",
+    "image": "assets/images/services/sofa_cleaning.jpg",
+    "price_from": 50,
+    "price_to": 120,
+    "descriptions": "تنظيف عميق للكنب والسجاد بالبخار وإزالة البقع والروائح.",
+    "include_services": [
+      {
+        "descriptions": "تنظيف بالبخار"
+      },
+      {
+        "descriptions": "إزالة البقع"
+      },
+      {
+        "descriptions": "تجفيف سريع"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "نقل الأثاث"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 20,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 21,
+        "user": {
+          "first_name": "محمد",
+          "last_name": "ناجي",
+          "image": "assets/images/avatars/avatar_2.jpg"
+        },
+        "review": 5,
+        "comment": "تعامل راقي وسرعة في الإنجاز",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      },
+      {
+        "id": 22,
+        "user": {
+          "first_name": "سارة",
+          "last_name": "يوسف",
+          "image": "assets/images/avatars/avatar_5.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-12",
+        "update_at": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category_id": 2,
+    "name": "تمديدات كهربائية",
+    "image": "assets/images/services/electrical_wiring.jpg",
+    "price_from": 60,
+    "price_to": 200,
+    "descriptions": "تمديد وصيانة الأسلاك الكهربائية والمقابس بشكل آمن.",
+    "include_services": [
+      {
+        "descriptions": "فحص الأسلاك"
+      },
+      {
+        "descriptions": "تركيب المقابس والمفاتيح"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "ثمن المواد"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 30,
+        "user": {
+          "first_name": "محمد",
+          "last_name": "ناجي",
+          "image": "assets/images/avatars/avatar_2.jpg"
+        },
+        "review": 5,
+        "comment": "تعامل راقي وسرعة في الإنجاز",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 31,
+        "user": {
+          "first_name": "سارة",
+          "last_name": "يوسف",
+          "image": "assets/images/avatars/avatar_5.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category_id": 2,
+    "name": "تركيب إنارة",
+    "image": "assets/images/services/lighting_installation.jpg",
+    "price_from": 30,
+    "price_to": 90,
+    "descriptions": "تركيب الثريات ووحدات الإنارة الداخلية والخارجية.",
+    "include_services": [
+      {
+        "descriptions": "تركيب وتوصيل الإنارة"
+      },
+      {
+        "descriptions": "اختبار التشغيل"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "ثمن وحدات الإنارة"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 40,
+        "user": {
+          "first_name": "سارة",
+          "last_name": "يوسف",
+          "image": "assets/images/avatars/avatar_5.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 41,
+        "user": {
+          "first_name": "خالد",
+          "last_name": "عمر",
+          "image": "assets/images/avatars/avatar_6.jpg"
+        },
+        "review": 5,
+        "comment": "خدمة ممتازة والفني ملتزم بالموعد",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      },
+      {
+        "id": 42,
+        "user": {
+          "first_name": "أحمد",
+          "last_name": "خليل",
+          "image": "assets/images/avatars/avatar_4.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-12",
+        "update_at": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category_id": 3,
+    "name": "تصليح تسريبات المياه",
+    "image": "assets/images/services/leak_repair.jpg",
+    "price_from": 40,
+    "price_to": 130,
+    "descriptions": "كشف وإصلاح تسريبات المياه في المطابخ والحمامات.",
+    "include_services": [
+      {
+        "descriptions": "كشف مكان التسريب"
+      },
+      {
+        "descriptions": "استبدال الوصلات التالفة"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "أعمال البلاط"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 50,
+        "user": {
+          "first_name": "خالد",
+          "last_name": "عمر",
+          "image": "assets/images/avatars/avatar_6.jpg"
+        },
+        "review": 5,
+        "comment": "خدمة ممتازة والفني ملتزم بالموعد",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 51,
+        "user": {
+          "first_name": "أحمد",
+          "last_name": "خليل",
+          "image": "assets/images/avatars/avatar_4.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category_id": 3,
+    "name": "تركيب سخان مياه",
+    "image": "assets/images/services/water_heater.jpg",
+    "price_from": 70,
+    "price_to": 160,
+    "descriptions": "تركيب سخانات المياه الكهربائية والشمسية وتوصيلها.",
+    "include_services": [
+      {
+        "descriptions": "التركيب والتوصيل"
+      },
+      {
+        "descriptions": "فحص الضغط"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "ثمن السخان"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 60,
+        "user": {
+          "first_name": "أحمد",
+          "last_name": "خليل",
+          "image": "assets/images/avatars/avatar_4.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 61,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 5,
+        "comment": "تعامل راقي وسرعة في الإنجاز",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      },
+      {
+        "id": 62,
+        "user": {
+          "first_name": "محمد",
+          "last_name": "ناجي",
+          "image": "assets/images/avatars/avatar_2.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-12",
+        "update_at": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "category_id": 4,
+    "name": "نقل أثاث المنزل",
+    "image": "assets/images/services/furniture_moving.jpg",
+    "price_from": 150,
+    "price_to": 400,
+    "descriptions": "فك وتغليف ونقل الأثاث وإعادة تركيبه في المكان الجديد.",
+    "include_services": [
+      {
+        "descriptions": "الفك والتركيب"
+      },
+      {
+        "descriptions": "التغليف"
+      },
+      {
+        "descriptions": "النقل بسيارة مجهزة"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "التخزين"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 70,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 5,
+        "comment": "تعامل راقي وسرعة في الإنجاز",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 71,
+        "user": {
+          "first_name": "محمد",
+          "last_name": "ناجي",
+          "image": "assets/images/avatars/avatar_2.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "category_id": 4,
+    "name": "تركيب غرف النوم",
+    "image": "assets/images/services/furniture_assembly.jpg",
+    "price_from": 60,
+    "price_to": 140,
+    "descriptions": "تركيب غرف النوم والخزائن الجديدة باحترافية.",
+    "include_services": [
+      {
+        "descriptions": "تركيب الخزائن والأسرّة"
+      },
+      {
+        "descriptions": "تثبيت على الجدار"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "ثمن القطع الإضافية"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 80,
+        "user": {
+          "first_name": "محمد",
+          "last_name": "ناجي",
+          "image": "assets/images/avatars/avatar_2.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 81,
+        "user": {
+          "first_name": "سارة",
+          "last_name": "يوسف",
+          "image": "assets/images/avatars/avatar_5.jpg"
+        },
+        "review": 5,
+        "comment": "خدمة ممتازة والفني ملتزم بالموعد",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      },
+      {
+        "id": 82,
+        "user": {
+          "first_name": "خالد",
+          "last_name": "عمر",
+          "image": "assets/images/avatars/avatar_6.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-12",
+        "update_at": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "category_id": 5,
+    "name": "صيانة اللابتوب",
+    "image": "assets/images/services/laptop_repair.jpg",
+    "price_from": 30,
+    "price_to": 100,
+    "descriptions": "فحص وصيانة أعطال اللابتوب وتنظيفه من الداخل.",
+    "include_services": [
+      {
+        "descriptions": "فحص شامل"
+      },
+      {
+        "descriptions": "تنظيف المروحة"
+      },
+      {
+        "descriptions": "تحديث النظام"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "قطع الغيار"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 90,
+        "user": {
+          "first_name": "سارة",
+          "last_name": "يوسف",
+          "image": "assets/images/avatars/avatar_5.jpg"
+        },
+        "review": 5,
+        "comment": "خدمة ممتازة والفني ملتزم بالموعد",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 91,
+        "user": {
+          "first_name": "خالد",
+          "last_name": "عمر",
+          "image": "assets/images/avatars/avatar_6.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "category_id": 5,
+    "name": "تثبيت البرامج والأنظمة",
+    "image": "assets/images/services/software_setup.jpg",
+    "price_from": 20,
+    "price_to": 60,
+    "descriptions": "تثبيت نظام التشغيل والبرامج الأساسية ونقل الملفات.",
+    "include_services": [
+      {
+        "descriptions": "تثبيت النظام"
+      },
+      {
+        "descriptions": "تثبيت البرامج"
+      },
+      {
+        "descriptions": "نسخ احتياطي"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "التراخيص المدفوعة"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 100,
+        "user": {
+          "first_name": "خالد",
+          "last_name": "عمر",
+          "image": "assets/images/avatars/avatar_6.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 101,
+        "user": {
+          "first_name": "أحمد",
+          "last_name": "خليل",
+          "image": "assets/images/avatars/avatar_4.jpg"
+        },
+        "review": 5,
+        "comment": "تعامل راقي وسرعة في الإنجاز",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      },
+      {
+        "id": 102,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-12",
+        "update_at": "2026-10-12"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "category_id": 6,
+    "name": "تمديد شبكة إنترنت",
+    "image": "assets/images/services/network_cabling.jpg",
+    "price_from": 50,
+    "price_to": 150,
+    "descriptions": "تمديد كوابل الشبكة وتوزيع الإنترنت على جميع الغرف.",
+    "include_services": [
+      {
+        "descriptions": "تمديد الكوابل"
+      },
+      {
+        "descriptions": "تركيب نقاط الوصول"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "ثمن الراوتر"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 110,
+        "user": {
+          "first_name": "أحمد",
+          "last_name": "خليل",
+          "image": "assets/images/avatars/avatar_4.jpg"
+        },
+        "review": 5,
+        "comment": "تعامل راقي وسرعة في الإنجاز",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 111,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "category_id": 6,
+    "name": "إعداد الراوتر وتقوية الإشارة",
+    "image": "assets/images/services/router_setup.jpg",
+    "price_from": 20,
+    "price_to": 70,
+    "descriptions": "ضبط إعدادات الراوتر وتحسين تغطية الواي فاي في المنزل.",
+    "include_services": [
+      {
+        "descriptions": "ضبط الإعدادات"
+      },
+      {
+        "descriptions": "حماية الشبكة بكلمة مرور"
+      }
+    ],
+    "not_include_services": [
+      {
+        "descriptions": "شراء أجهزة تقوية"
+      }
+    ],
+    "reviews": [
+      {
+        "id": 120,
+        "user": {
+          "first_name": "ليان",
+          "last_name": "منصور",
+          "image": "assets/images/avatars/avatar_3.jpg"
+        },
+        "review": 4,
+        "comment": "أنصح فيها، النتيجة كانت أحسن من المتوقع",
+        "create_at": "2026-10-10",
+        "update_at": "2026-10-10"
+      },
+      {
+        "id": 121,
+        "user": {
+          "first_name": "محمد",
+          "last_name": "ناجي",
+          "image": "assets/images/avatars/avatar_2.jpg"
+        },
+        "review": 5,
+        "comment": "خدمة ممتازة والفني ملتزم بالموعد",
+        "create_at": "2026-10-11",
+        "update_at": "2026-10-11"
+      },
+      {
+        "id": 122,
+        "user": {
+          "first_name": "سارة",
+          "last_name": "يوسف",
+          "image": "assets/images/avatars/avatar_5.jpg"
+        },
+        "review": 4,
+        "comment": "شغل نظيف وسعر مناسب",
+        "create_at": "2026-10-12",
+        "update_at": "2026-10-12"
+      }
+    ]
+  }
+]

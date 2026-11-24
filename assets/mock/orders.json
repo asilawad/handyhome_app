@@ -1,0 +1,67 @@
+[
+  {
+    "id": 100,
+    "order_status": "مكتمل",
+    "quantity": 1,
+    "total_price": 120,
+    "date_order": "2026-11-03",
+    "time_order": "10:00",
+    "create_at": "2026-11-02",
+    "update_at": "2026-11-02",
+    "create_by": 1,
+    "service": 1,
+    "service_name": "تنظيف شامل للمنزل"
+  },
+  {
+    "id": 101,
+    "order_status": "قيد المراجعة",
+    "quantity": 2,
+    "total_price": 90,
+    "date_order": "2026-11-05",
+    "time_order": "13:30",
+    "create_at": "2026-11-04",
+    "update_at": "2026-11-04",
+    "create_by": 1,
+    "service": 5,
+    "service_name": "تصليح تسريبات المياه"
+  },
+  {
+    "id": 102,
+    "order_status": "قيد التنفيذ",
+    "quantity": 1,
+    "total_price": 160,
+    "date_order": "2026-11-07",
+    "time_order": "09:00",
+    "create_at": "2026-11-06",
+    "update_at": "2026-11-06",
+    "create_by": 1,
+    "service": 7,
+    "service_name": "نقل أثاث المنزل"
+  },
+  {
+    "id": 103,
+    "order_status": "مكتمل",
+    "quantity": 2,
+    "total_price": 60,
+    "date_order": "2026-11-09",
+    "time_order": "16:00",
+    "create_at": "2026-11-08",
+    "update_at": "2026-11-08",
+    "create_by": 1,
+    "service": 9,
+    "service_name": "صيانة اللابتوب"
+  },
+  {
+    "id": 104,
+    "order_status": "مرفوض",
+    "quantity": 1,
+    "total_price": 200,
+    "date_order": "2026-11-11",
+    "time_order": "11:15",
+    "create_at": "2026-11-10",
+    "update_at": "2026-11-10",
+    "create_by": 1,
+    "service": 3,
+    "service_name": "تمديدات كهربائية"
+  }
+]

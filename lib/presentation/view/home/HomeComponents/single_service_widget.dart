@@ -1,4 +1,4 @@
-import 'dart:math';
+import 'package:handy_home_app/customwidget/app_image.dart';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +16,7 @@ class SingleServiceWidget extends StatelessWidget {
     required this.image,
     required this.serviceName,
     required this.price,
+    this.rating = '',
   }) : super(key: key);
   final double? width;
   final double serviceFontSize;
@@ -23,6 +24,7 @@ class SingleServiceWidget extends StatelessWidget {
   final String image;
   final String serviceName;
   final String price;
+  final String rating;
   final Widget? loadingPlaceholder;
   @override
   Widget build(BuildContext context) {
@@ -46,7 +48,7 @@ class SingleServiceWidget extends StatelessWidget {
                     width: width,
                     decoration:
                         BoxDecoration(borderRadius: BorderRadius.circular(8)),
-                    child: CachedNetworkImage(
+                    child: AppImage(
                       imageUrl: image,
                       fit: BoxFit.cover,
                       placeholder: (context, url) =>
@@ -63,23 +65,30 @@ class SingleServiceWidget extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                   ),
                   Text(
-                    '$price ش',
+                    _priceRange(price),
                     textAlign: TextAlign.right,
                   )
                 ],
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                top: 18,
-                left: 16,
-              ),
-              child:
-                  StareRatingWidget(ratingNumber: '${Random().nextInt(5) + 1}'),
-            )
+            if (rating.isNotEmpty)
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 18,
+                  left: 16,
+                ),
+                child: StareRatingWidget(ratingNumber: rating),
+              )
           ],
         ),
       ),
     );
   }
+}
+
+/// "30-100" -> "من 30 إلى 100 شيكل" (unambiguous in right-to-left text).
+String _priceRange(String price) {
+  final parts = price.split('-').map((e) => e.trim()).toList();
+  if (parts.length != 2) return '$price شيكل';
+  return 'من ${parts[0]} إلى ${parts[1]} شيكل';
 }

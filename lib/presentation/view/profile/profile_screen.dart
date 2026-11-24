@@ -98,6 +98,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const Divider(
                     thickness: 1,
                     height: 10,
+                    color: Color(0xFFECEFEF),
                   ),
                   ProfileCustomListTile(
                     text: 'تغيير البريد الالكتروني',
@@ -108,6 +109,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const Divider(
                     thickness: 1,
                     height: 10,
+                    color: Color(0xFFECEFEF),
                   ),
                   ProfileCustomListTile(
                     text: 'إدارة العناوين',
@@ -143,6 +145,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const Divider(
                     thickness: 1,
                     height: 10,
+                    color: Color(0xFFECEFEF),
                   ),
                   ProfileCustomListTile(
                     text: 'عن التطبيق',
@@ -153,6 +156,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const Divider(
                     thickness: 1,
                     height: 10,
+                    color: Color(0xFFECEFEF),
                   ),
                   ProfileCustomListTile(
                     text: 'سياسية الاستخدام',
@@ -163,6 +167,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const Divider(
                     thickness: 1,
                     height: 10,
+                    color: Color(0xFFECEFEF),
                   ),
                   ProfileCustomListTile(
                     text: 'سياسية الخصوصية',
@@ -173,6 +178,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   const Divider(
                     thickness: 1,
                     height: 10,
+                    color: Color(0xFFECEFEF),
                   ),
                   ProfileCustomListTile(
                     text: 'الأسئلة الشائعة',
